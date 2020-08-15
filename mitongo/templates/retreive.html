@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+    
+ 
+
+        {% block content %}
+        <div class = "container">
+           <p> {{object.id}} <a href = '{{object.get_absolute_url}}'> {{object.title}}</a></p>
+            {{object.name}}
+            {{object.description}}
+      
+          
+       
+        </div>
+      {% endblock %}

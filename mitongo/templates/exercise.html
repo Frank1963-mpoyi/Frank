@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FRONT END EXERCISE
+        </title>
+
+    </head>
+
+    <body>
+        <div class ='container-fluid'>
+        <header>
+            <h2> FRONT END EXERCISES </h2>
+            <ul style='background-color: cadetblue;'>
+                <li>Orange</li>
+                <li>Mango</li>
+                <ol>
+                    <li style='color:pink;'> <b><big>Lys</li></b></big>
+                    <li style='color:white;'> Sharon</li>
+                    <li> Acacia</li>
+                    <li> Sarah</li>
+                    <li style ='color:blue;'> Baby Boy</li> 
+                </ol>
+                <li>Banana</li>
+            </ul>
+        </header>
+
+        <main>
+            <h2> Exercise</h2>
+            <p>This ﬁle looks just like the ﬁrst urls.py. Now however we used the ﬁrst argument of the patterns command to tell we will use views located in members/views.py. The second line states that we will use the function myFirstView for every URL. Remember we already deﬁned that the url has to start with members/ in the project urls.py ﬁle, so this will be used for urls of the type members/*, where * is a wildcard. Now start the django project as before and go to http://localhost:8000/members/ and see your ﬁrst real django webpage. Notice that the domain name (http://localhost:8000/) is stripped for url lookups, this makes it easy to deploy django on diﬀerent domains, for example localhost for development and the real server for release.
+                3.4 How does URL matching work?
+                Up until now we didn’t explain the exact details of how url lookups work. Actually the ﬁrst part of each url deﬁnition is a regular expression. These can become quite complex but the basics are simple. Without any modiﬁer the url will be used whenever that text is encountered in the url. so r’test’ will resolve any url containing test, because of this r’’ will simply match any url. When you add ^ at the beginning you specify that the url should start with this text, similar when you add $ add the end you specify that the url should end with this text. So r’^members/’ will match both members/ and members/test but not test/test. r’test$’ will match members/test and test/test but not members/. Finally r’^members/$ will only match members/.
+                 </p>
+                 <br/>
+                 <hr/>
+        </main>
+        <table border ='4'>
+            <thead>
+                <tr>
+                    <th> PAPA</th>
+                    <th> MAMAN</th>
+                    <th> CHILDREN</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td> MPOYI</td>
+                        <td> MITONGO</td>
+                        <td> KAMUANYA SHARON NDAYA MBUYI</td>
+                    </tr>
+                </tbody>
+            </th>
+        </table> 
+        <br/>
+        <br/>
+
+        <div class='container'>
+            <div class= 'row'>
+                <div class='col-md-4'>
+                    <div class ='thumbnail'>
+                        <img src='static/image/mpoyi.jpg' class ='img-circle' alt='Cinque Terre' width='304' height='236'/> <br/>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href='mailto:frankmpoyi@gmail.com' target='_blank'> here</a><br/>
+        <a href='mailto:frankmpoyi@gmail.com' target='_blank'> here</a>
+    </body>
+
+
+
+</html>
+</div>
+{% endblock  %}

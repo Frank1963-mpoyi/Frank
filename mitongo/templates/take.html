@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+    
+ 
+
+        {% block content %}
+        <div class = "container">
+       {% for object in object_list %}
+            <h3 class = "page-header"><samll>{{object.name}}</h3></samll><br/>
+            <p><a href ='#'>View</a>{{object.location}}</p>
+            <p><a href ='#'>Home</a>{{object.email}}</p>
+            <p><a href ='#'>Contact</a>{{object.decription}}</p>
+        
+        {% endfor %}
+        </div>
+      {% endblock %}
