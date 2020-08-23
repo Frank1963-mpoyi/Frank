@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def paul_draft(request):
+    
+    
+    #context={'paul_draft': }
+    template_name ='draft.html'
+    return render(request, template_name , context)
